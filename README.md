@@ -41,7 +41,7 @@ boost_1_69_0.tar.gz 100%[================>] 106,53M  1,99MB/s    за 69s
 2. Разархивируйте скачанный файл в директорию `~/boost_1_69_0`
 ```sh
 $ tar -xzvf boost_1_69_0.tar.gz -C /workspace
-[Результаты](https://gist.github.com/METEOPuT/c004a78affa66e1461ae626ed2ce6abf)
+[Результаты](https://raw.githubusercontent.com/METEOPuT/TiMP-Kleshchinskii/refs/heads/main/zad1.2)
 ```
 3. Подсчитайте количество файлов в директории `~/boost_1_69_0` **не включая** вложенные директории.
 ```sh
@@ -79,13 +79,13 @@ $ find /workspace/boost_1_69_0 -type f -name "any.hpp"
 7. Выведите в консоль все файлы, где упоминается последовательность `boost::asio`.
 ```sh
 $ grep -r "boost::asio" /workspace/boost_1_69_0 > /workspace/reports/zad1.7
-[Результаты](https://gist.github.com/METEOPuT/430bdf6e3944a422ac2168dd146899cc)
+[Результаты](https://raw.githubusercontent.com/METEOPuT/TiMP-Kleshchinskii/refs/heads/main/zad1.7)
 ```
 8. Скомпилирутйе *boost*. Можно воспользоваться [инструкцией](https://www.boost.org/doc/libs/1_61_0/more/getting_started/unix-variants.html#or-build-custom-binaries) или [ссылкой](https://codeyarns.com/2017/01/24/how-to-build-boost-on-linux/).
 ```sh
 $ ./bootstrap.sh
 $ ./b2
-[Компиляция](https://gist.github.com/METEOPuT/7eb7df4d53baf0f63462f23dc7272855)
+[Компиляция](https://raw.githubusercontent.com/METEOPuT/TiMP-Kleshchinskii/refs/heads/main/zad1.8)
 $ sudo ./b2 install
 $ ls /usr/local/lib | grep boost
 libboost_atomic.a
